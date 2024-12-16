@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediplus Clinic</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body and Wrapper */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .wrapper {
+            flex: 1;
+        }
+
+        /* Header Section */
+        .header-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #6a2e2e;
+            padding: 15px 20px;
+        }
+
+        .header-main h1 {
+            font-size: 26px;
+            color: #e4b4b9;
+            text-transform: uppercase;
+        }
+
+        .header-main nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+            margin-left: 15px;
+        }
+
+        .header-main nav a:hover {
+            color: #3498db;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), 
+                url("images/image1.png") no-repeat center center/cover;
+            color: white;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 50px 20px;
+            min-height: 60vh;
+        }
+
+        .hero-content {
+            max-width: 500px;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            color: #e4b4b9;
+        }
+
+        .hero h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .hero .emergency-btn {
+            display: inline-block;
+            background-color: #ff4c4c;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .hero .emergency-btn:hover {
+            background-color: #e63939;
+            transform: translateY(-3px);
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-info,
+        .footer-social {
+            flex: 1;
+            margin: 10px;
+            min-width: 200px;
+        }
+
+        .footer-info h4,
+        .footer-social h4 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .footer-info p,
+        .footer-social a {
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        .footer-social a {
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        .footer-social a:hover {
+            color: #3498db;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 24px;
+            }
+
+            .hero h3 {
+                font-size: 20px;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-info,
+            .footer-social {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header Section -->
+        <header>
+            <div class="header-main">
+                <h1>Mediplus Clinic</h1>
+                <nav>
+                    <a href="usersignin.html">Login</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Mediplus Clinic</h2>
+                <h3>Your Health, Our Priority</h3>
+                <a href="usersignin.html" class="emergency-btn">Emergency</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h4>Get In Touch</h4>
+                <p>No: 111, M Square, Gampian, Chennai, Tamil Nadu</p>
+                <p>Email: info@mediplusclinic.com</p>
+                <p>Phone: +91 99999 00099</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="https://x.com/">🐦 Twitter</a>
+                <a href="https://www.instagram.com/">📸 Instagram</a>
+                <a href="https://in.linkedin.com/">🔗 LinkedIn</a>
+                <a href="https://www.facebook.com/">📘 Facebook</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

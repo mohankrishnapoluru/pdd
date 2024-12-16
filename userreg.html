@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration - Mediplus Clinic</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header Section */
+        .header-main {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+            background-color: #6a2e2e;
+            color: #fff;
+        }
+
+        .header-main h1 {
+            font-size: 28px;
+            color: #e4b4b9;
+            text-transform: uppercase;
+        }
+
+        /* Form Section */
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 70vh;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .form-box {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .form-box h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .form-box label {
+            display: block;
+            text-align: left;
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .form-box input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .form-box button {
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 4px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .form-box button:hover {
+            background-color: #2980b9;
+        }
+
+        .form-box .form-link {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .form-box .form-link a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #3a3b3c;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        footer h4 {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        footer p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        footer a {
+            color: #ddd;
+            text-decoration: none;
+            margin: 5px;
+        }
+
+        footer a:hover {
+            color: #3498db;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-main">
+            <h1>Mediplus Clinic</h1>
+        </div>
+    </header>
+
+    <!-- User Registration Form Section -->
+    <section class="form-container">
+        <div class="form-box">
+            <h2>User Registration</h2>
+            <form action="backend/signup.php" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required autocomplete="off">
+
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required autocomplete="off">
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="mobile">Mobile Number</label>
+                <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required autocomplete="off">
+
+                <button type="submit">Register</button>
+
+                <div class="form-link">
+                    Already have an account? <a href="usersignin.html">Sign In</a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div>
+            <h4>Get In Touch</h4>
+            <p>No: 111, M Square, Gampian, Chennai, Tamil Nadu</p>
+            <p>Email: info@mediplusclinic.com</p>
+            <p>Phone: +91 99999 00099</p>
+            <div>
+                <a href="https://x.com/">🐦 Twitter</a> |
+                <a href="https://www.instagram.com/">📸 Instagram</a> |
+                <a href="https://in.linkedin.com/">🔗 LinkedIn</a> |
+                <a href="https://www.facebook.com/">📘 Facebook</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
